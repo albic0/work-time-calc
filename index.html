@@ -2,21 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Work Time Cost</title>
+
+  <!-- App title -->
+  <title>Work Time Calculator</title>
+
+  <!-- Mobile friendliness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- PWA bits -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#222222">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>💸 Work Time Calculator</h1>
+  <h1>💷 Scottish Salary → Work-Time Calculator</h1>
 
   <div class="box">
-    <input id="salary" type="number" placeholder="Annual Salary (£)">
-    <input id="cost" type="number" placeholder="Item cost (£)">
+    <input
+      id="salary"
+      type="number"
+      placeholder="Annual salary (before tax £)"
+      inputmode="numeric"
+    >
+
+    <input
+      id="cost"
+      type="number"
+      placeholder="Item cost (£)"
+      inputmode="numeric"
+    >
+
     <button onclick="calculate()">Calculate</button>
 
     <p id="result"></p>
   </div>
 
+  <!-- App logic -->
   <script src="script.js"></script>
+
 </body>
 </html>
