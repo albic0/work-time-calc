@@ -64,3 +64,6 @@ That item costs:
 • ${hours.toFixed(2)} hours of work
 • ~${days.toFixed(2)} working days`;
 }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
